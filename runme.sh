@@ -51,8 +51,8 @@ if [ -f yuritopia.nro ]; then
 	rm -f yuritopia.nro
 fi
 
-if [ -d romfs ]; then
-	rm -rf romfs
+if [ -d Romfs ]; then
+	rm -rf Romfs
 fi
 
 mkdir -p Romfs/Contents
