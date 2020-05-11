@@ -21,6 +21,10 @@ This script assumes following commands are available and accessible through $PAT
 3. If you want any game mod to be included, install it in game directory.
 4. Run `runme.sh`. It will transcode all assets and build `yuritopia.nro`.
 
+# Special thanks
+
+@uyjulian for porting Ren'Py to Nintendo Switch
+
 # Note
 
 Game logo is obtained from https://upload.wikimedia.org/wikipedia/en/e/e1/Kindred_Spirits_on_the_Roof_Logo.png
