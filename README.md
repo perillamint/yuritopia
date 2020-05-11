@@ -18,7 +18,8 @@ This script assumes following commands are available and accessible through $PAT
 
 1. Install all the dependencies.
 2. Extract game zip in this directory. It should create directory named `kindredspirits-fc-pc`.
-3. Run `runme.sh`. It will transcode all assets and build `yuritopia.nro`
+3. If you want any game mod to be included, install it in game directory.
+4. Run `runme.sh`. It will transcode all assets and build `yuritopia.nro`.
 
 # Note
 
