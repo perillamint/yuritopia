@@ -1,3 +1,6 @@
 kindredspirits-fc-pc/*
 renpy-switch-sdk/*
 game/*
+*.nacp
+*.nro
+Romfs/*

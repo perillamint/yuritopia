@@ -5,7 +5,7 @@ echo "Checking command availabilities..."
 
 FLAG=0
 
-for i in fd unrpa rpatool ffmpeg cwebp 7z; do
+for i in fd unrpa rpatool ffmpeg cwebp 7z nacptool elf2nro; do
 	command -v "$i" > /dev/null
 	if [ "$?" != 0 ]; then
 		echo "$i is not available."
@@ -38,6 +38,29 @@ cp -arv kindredspirits-fc-pc/game ./game
 
 ./convert.sh
 
-mv ./game renpy-switch-sdk/
 
 echo "Ready to launch."
+
+if [ -f control.nacp ]; then
+	rm -f control.nacp
+fi
+
+nacptool --create 'Kindred Spirits on the Roof' 'Liar-soft' '1.0' control.nacp
+
+if [ -f yuritopia.nro ]; then
+	rm -f yuritopia.nro
+fi
+
+if [ -d romfs ]; then
+	rm -rf romfs
+fi
+
+mkdir -p Romfs/Contents
+mv ./game Romfs/Contents/
+
+cp -f ./renpy-switch-sdk/lib.zip Romfs/Contents
+cp -r ./renpy-switch-sdk/renpy Romfs/Contents
+cp -r ./renpy-switch-sdk/renpy.py Romfs/Contents
+
+elf2nro ./renpy-switch-sdk/renpy-switch.elf yuritopia.nro --romfsdir=Romfs --nacp=control.nacp --icon=./logo.jpg
+

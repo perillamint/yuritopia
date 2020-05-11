@@ -1,11 +1,11 @@
 #!/bin/bash
 
-NTHREAD=9
 
 pushd ./game
 
 set -e
 
+NTHREAD=8
 AUDIOBITRATE="96k"
 VIDEOBITRATE="756k"
 
