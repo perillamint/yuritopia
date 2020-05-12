@@ -26,8 +26,6 @@ This script assumes following commands are available and accessible through $PAT
 This script will automatically download and prepare following projects
 * https://github.com/uyjulian/renpy-switch
 
-# What you'
-
 # Instruction
 
 1. Install all the dependencies.
