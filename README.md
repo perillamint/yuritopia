@@ -4,7 +4,7 @@ Kindred Spirits on the Roof porting kit for Nintendo Switch
 # Dependency
 
 Ofc, this script requires you have legit copy of Kindred Spirits on the Roof.
-You can buy the game at
+You can purchase the game from one of links below:
 
 * http://www.dlsite.com/pro/work/=/product_id/VJ011691.html
 * http://www.net-ride.com/shopping/index.php?R_km_url=liarso&dw_week=20161028183602
