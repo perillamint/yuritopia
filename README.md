@@ -41,3 +41,4 @@ This script will automatically download and prepare following projects
 
 Game logo is obtained from https://upload.wikimedia.org/wikipedia/en/e/e1/Kindred_Spirits_on_the_Roof_Logo.png
 
+My setup requires approx 2min to boot up the game (Korean locale mod installed, full chorus edition). I guess overclocking with sys-clk can reduce startup time but I didn't tried it yet. Your mileage may vary.
