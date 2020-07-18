@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSION=v1.7
+VERSION=v1.7.1
 
 wget https://github.com/uyjulian/renpy-switch/releases/download/"$VERSION"/renpy-switch-sdk-"$VERSION".7z
 7z x renpy-switch-sdk-"$VERSION".7z
