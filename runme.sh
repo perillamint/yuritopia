@@ -28,7 +28,6 @@ if [ ! -d "$GAMEDIR" ]; then
 fi
 
 set -e
-rm -rfv renpy-switch-sdk
 
 ./prepare.sh
 
