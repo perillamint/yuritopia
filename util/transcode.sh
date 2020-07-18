@@ -4,7 +4,8 @@ FILENAME="$1"
 CONTAINER="$2"
 OPTS="${@:3}"
 
-TMPFILE="tmp-$$.$CONTAINER"
+#TMPFILE="tmp-$$.$CONTAINER"
+TMPFILE="tmp-$$.$CONTAINER.opus"
 
 echo $TMPFILE
 

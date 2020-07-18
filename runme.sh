@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source gamecfg
+
 # Pre-flight check
 echo "Checking command availabilities..."
 
@@ -45,10 +47,10 @@ if [ -f control.nacp ]; then
 	rm -f control.nacp
 fi
 
-nacptool --create 'Kindred Spirits on the Roof' 'Liar-soft' '1.0' control.nacp
+nacptool --create "$GAMENAME" "$GAMEPUB" "$GAMEVER" control.nacp
 
-if [ -f yuritopia.nro ]; then
-	rm -f yuritopia.nro
+if [ -f "$ARTIFACT" ]; then
+	rm -f "$ARTIFACT"
 fi
 
 if [ -d Romfs ]; then
@@ -62,5 +64,5 @@ cp -f ./renpy-switch-sdk/lib.zip Romfs/Contents
 cp -r ./renpy-switch-sdk/renpy Romfs/Contents
 cp -r ./renpy-switch-sdk/renpy.py Romfs/Contents
 
-elf2nro ./renpy-switch-sdk/renpy-switch.elf yuritopia.nro --romfsdir=Romfs --nacp=control.nacp --icon=./logo.jpg
+elf2nro ./renpy-switch-sdk/renpy-switch.elf "$ARTIFACT" --romfsdir=Romfs --nacp=control.nacp --icon=./logo.jpg
 
