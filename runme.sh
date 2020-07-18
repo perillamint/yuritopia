@@ -46,7 +46,7 @@ if [ -f control.nacp ]; then
 	rm -f control.nacp
 fi
 
-nacptool --create "$GAMENAME" "$GAMEPUB" "$GAMEVER" control.nacp
+nacptool --create "$GAMENAME" "$GAMEAUTHOR" "$GAMEVER" control.nacp
 
 if [ -f "$ARTIFACT" ]; then
 	rm -f "$ARTIFACT"

@@ -1,6 +1,1 @@
-GAMEDIR=kindredspirits-fc-pc
-GAMENAME='Kindred Spirits on the Roof'
-GAMEPUB='Liar-soft'
-GAMEVER='1.0'
-ARTIFACT='yuritopia.nro'
-COVER='cover-yuritopia.jpg'
+./profiles/heart_of_the_woods.profile

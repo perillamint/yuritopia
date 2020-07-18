@@ -1,0 +1,6 @@
+GAMEDIR='Heart of the Woods'
+GAMENAME='Heart of the Woods'
+GAMEAUTHOR='Studio Élan'
+GAMEVER='1.0'
+ARTIFACT='yuritopia.nro'
+COVER='cover-yuritopia.jpg'
