@@ -64,5 +64,5 @@ cp -f ./renpy-switch-sdk/lib.zip Romfs/Contents
 cp -r ./renpy-switch-sdk/renpy Romfs/Contents
 cp -r ./renpy-switch-sdk/renpy.py Romfs/Contents
 
-elf2nro ./renpy-switch-sdk/renpy-switch.elf "$ARTIFACT" --romfsdir=Romfs --nacp=control.nacp --icon=./logo.jpg
+elf2nro ./renpy-switch-sdk/renpy-switch.elf "$ARTIFACT" --romfsdir=Romfs --nacp=control.nacp --icon="$COVER"
 
