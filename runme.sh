@@ -21,8 +21,8 @@ fi
 
 echo "Preflight check passed."
 
-if [ ! -d "kindredspirits-fc-pc" ]; then
-	echo "Game is not extracted in kindredspirits-fc-pc folder."
+if [ ! -d "$GAMEDIR" ]; then
+	echo "Game is not extracted in $GAMEDIR folder."
 	echo "Please extract game zip in this directory and re-run this script"
 	exit 1;
 fi
@@ -36,7 +36,7 @@ if [ -d game ]; then
 	rm -rfv game
 fi
 
-cp -arv kindredspirits-fc-pc/game ./game
+cp -arv "$GAMEDIR/game" ./game
 
 ./convert.sh
 
